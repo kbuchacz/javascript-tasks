@@ -247,7 +247,7 @@ describe('Lodash Collection training', function () {
         });
     });
 
-    describe('sortBy', function () {
+    describe.only('sortBy', function () {
         it('should sort by all property names', function () {
             var testFunction = function () {
                 if (Math.random() < 0.3) {
