@@ -117,6 +117,6 @@ module.exports = {
         }];
     }, sortBy: function (arr)
     {
-        return [];
+        return [arr, [null, null]];
     }
 };
