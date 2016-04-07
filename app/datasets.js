@@ -131,60 +131,81 @@ module.exports = {
         return [{firstName: '', lastName: '', users: 0, running: false}, [0, null]];
     }, includes2: function ()
     {
-        //return [['antidisestablishmentarianism', 'a', 'a', 'b'], 'a'];
-    }, includes3: function ()
+        return [['antidisestablishmentarianism', 'aaaasaa', 'amentaraaba', 'stablishmentarianism'], 'mentar'];
+    }, includes3: function (arr)
     {
-        //return [];
+        return [arr, [[2, 5], [3, 1], [false, true]]];
     }, map: function (arr)
     {
-        //return [arr, ''];
-    }, map2: function (arr)
+        return [arr, 'firstName'];
+    }, map2: function ()
     {
-        //return [arr];
+        return [[1, 2, 3, 4, 5, 36], function (value) {
+            switch(value){
+                case 2:
+                    return 4;
+                case 4:
+                    return 16;
+                case 10:
+                    return 100;
+                case 12:
+                    return 144;
+                case 35:
+                    return 35;
+                case 40:
+                    return 1600;
+                case 11:
+                    return 11;
+                case 16:
+                    return 256;
+                default:
+                    return 'number' === typeof value ? value: false;
+            }
+        }];
     }, partition: function ()
     {
-        //return [[{
-        //    name: 'Harry', age: 40, active: true
-        //}, {
-        //    name: 'Francheska', age: 61, active: true
-        //}, {
-        //    name: 'Andrinio', age: 36, active: false
-        //}, {
-        //    name: 'Kodi', age: 1, active: false
-        //}], function (item)
-        //    {
-        //        return item.name === 'Harry' || item.name === 'Francheska';
-        //    }];
+        return [[{
+            name: 'Harry', age: 40, active: true
+        }, {
+            name: 'Francheska', age: 61, active: true
+        }, {
+            name: 'Andrinio', age: 36, active: false
+        }, {
+            name: 'Kodi', age: 1, active: false
+        }], function (item)
+            {
+                return item.name === 'Harry' || item.name === 'Francheska';
+            }];
     }, partition2: function ()
     {
-        //return [[{
-        //    name: 'Andrinio', age: 36, active: false
-        //}, {
-        //    name: 'Harry', age: 40, active: true
-        //}, {
-        //    name: 'Kodi', age: 1, active: false
-        //}, {
-        //    name: 'Francheska', age: 61, active: true
-        //}], null];
+        return [[{
+            name: 'Andrinio', age: 36, active: false
+        }, {
+            name: 'Harry', age: 40, active: true
+        }, {
+            name: 'Kodi', age: 1, active: false
+        }, {
+            name: 'Francheska', age: 61, active: true
+        }], null];
     }, partition3: function ()
     {
-        //return [[{
-        //    name: 'Andrinio', age: 36, active: false
-        //}, {
-        //    name: 'Harry', age: 40, active: true
-        //}, {
-        //    name: 'Kodi', age: 1, active: false
-        //}, {
-        //    name: 'Francheska', age: 61, active: true
-        //}], true];
+        return [[{
+            name: 'Andrinio', age: 36, active: false
+        }, {
+            name: 'Harry', age: 40, active: true
+        }, {
+            name: 'Kodi', age: 1, active: false
+        }, {
+            name: 'Francheska', age: 61, active: true
+        }], true];
     }, reduce: function ()
     {
-        //return [[1, 5, 'ee', 'aa', 'ss'], function ()
-        //                                  {
-        //                                      return 55;
-        //                                  }];
+        return [[1, 5, 'ee', 'aa', 'ss'], function ()
+                                          {
+                                              return 55;
+                                          }];
     }, sortBy: function (arr)
     {
-        //return [arr, [null, null]];
+        return [arr, [null, null]];
     }
 };

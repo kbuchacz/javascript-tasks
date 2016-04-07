@@ -362,7 +362,7 @@ describe('Lodash Collection training', function () {
         });
     });
 
-    describe.only('includes', function () {
+    describe('includes', function () {
         describe('incloudes function', function () {
             var params = datasets.includes();
             var obj = params[0];
@@ -521,7 +521,7 @@ describe('Lodash Collection training', function () {
         });
     });
 
-    describe('partition', function () {
+    describe.only('partition', function () {
         var users = [
             {name: 'Andrinio', age: 36, active: false},
             {name: 'Harry', age: 40, active: true},
