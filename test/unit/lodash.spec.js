@@ -144,7 +144,7 @@ describe('Lodash Collection training', function () {
         });
     });
 
-    describe('filter', function () {
+    describe.only('filter', function () {
         describe('filter function', function () {
             var params = datasets.filter();
 
@@ -362,7 +362,7 @@ describe('Lodash Collection training', function () {
         });
     });
 
-    describe('includes', function () {
+    describe.only('includes', function () {
         describe('incloudes function', function () {
             var params = datasets.includes();
             var obj = params[0];
@@ -432,9 +432,9 @@ describe('Lodash Collection training', function () {
         describe('includes3 function', function () {
             var array = [1, true, 3, 'wood', 4, 2, false, true, 'wodo'];
             var params = datasets.includes3(array);
-            var predicate1 = params[1][0];
-            var predicate2 = params[1][1];
-            var predicate3 = params[1][2];
+            var predicate1 = params[1] && params[1][0];
+            var predicate2 = params[1] && params[1][1];
+            var predicate3 = params[1] && params[1][2];
 
             it('should match types of passing elements', function () {
                 var element = params[1] instanceof Array;
