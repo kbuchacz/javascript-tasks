@@ -144,7 +144,7 @@ describe('Lodash Collection training', function () {
         });
     });
 
-    describe.only('filter', function () {
+    describe('filter', function () {
         describe('filter function', function () {
             var params = datasets.filter();
 
@@ -521,7 +521,7 @@ describe('Lodash Collection training', function () {
         });
     });
 
-    describe.only('partition', function () {
+    describe('partition', function () {
         var users = [
             {name: 'Andrinio', age: 36, active: false},
             {name: 'Harry', age: 40, active: true},
@@ -607,7 +607,7 @@ describe('Lodash Collection training', function () {
 
             expect(element1).to.eql(true);
             expect(element2).to.eql(true);
-            expect(element3).to.eql('number')
+            expect(element3).to.eql('number');
             expect(params.length).to.eql(3);
         });
         it('should pass mock test', function () {
@@ -640,7 +640,7 @@ describe('Lodash Collection training', function () {
             expect(element2).to.eql('string');
             expect(params.length).to.eql(2);
         });
-        it('should contain array of random strings with different lenghts', function () {
+        it('should contain array of random strings with different lengths', function () {
             var checkLetters = array[0].substr(0, 3);
             var checkLetters2 = array[2].substr(2, 5);
             var checkLetters3 = array[3].substr(6, 10);

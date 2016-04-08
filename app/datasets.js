@@ -174,7 +174,7 @@ module.exports = {
             name: 'Kodi', age: 1, active: false
         }], function (item)
             {
-                return item.name === 'Harry' || item.name === 'Francheska';
+                return item.name === 'Harry' || item.name === 'Francheska' || item.ee === 40;
             }];
     }, partition2: function ()
     {
@@ -186,7 +186,7 @@ module.exports = {
             name: 'Kodi', age: 1, active: false
         }, {
             name: 'Francheska', age: 61, active: true
-        }], null];
+        }], 'name'];
     }, partition3: function ()
     {
         return [[{
@@ -200,12 +200,13 @@ module.exports = {
         }], true];
     }, reduce: function ()
     {
-        return [[1, 5, 'ee', 'aa', 'ss'], function ()
+        return [[5, 1, 1, 1, 1], function (sum, value)
                                           {
-                                              return 55;
-                                          }];
-    }, sortBy: function (arr)
+                                              if(1 === value) return 55;
+                                              else return 590;
+                                          }, NaN];
+    }, sortBy: function ()
     {
-        return [arr, [null, null]];
+        return [['aaae', 'uu', 'bboooo', 'ccccccllll', 'dddkkkkk', 'yyy'], 'length'];
     }
 };
