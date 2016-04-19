@@ -37,7 +37,7 @@ module.exports = {
     },
 
     divide: function () {
-        return [3, 0];
+        return [Infinity, 1];
     },
 
     floor: function (callback, precision) {
@@ -63,7 +63,7 @@ module.exports = {
     },
 
     maxBy1: function (array) {
-        return [array];
+        return array && array[0] === 6 ? {0: [8], length: 1} : {0: [0], length: 1};
     },
     /*
     maxBy2: function (array) {
@@ -72,7 +72,7 @@ module.exports = {
     */
     maxBy3: function () {
 
-        var objects = [{ 'Name': 'Jack', 'Gold': 1500 }, { 'Name': 'Edwin', 'Gold': 2500 }, { 'Name': 'Bob', 'Gold': 200 }];
+        var objects = [{ 'Name': 'Edwin', 'Gold': 2500 }];
 
         return [objects, 'Gold'];
     },

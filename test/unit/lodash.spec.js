@@ -2,6 +2,7 @@
 
 var chai = require('chai');
 var expect = chai.expect;
+var should = chai.should();
 var _ = require('lodash');
 var datasets = require('../../app/datasets');
 var Guy = require('./Guy');
@@ -133,7 +134,7 @@ describe('Lodash training', function ()
                 expect(params).to.have.length(1);
 
                 for(var i=0; i<params[0].length; i++){
-                    expect(typeof params[0][i]).to.eql('number');
+                    params[0][i].should.be.a('number');
                 }
 
                 expect(_.max.apply(_, datasets.max(params))).to.eql(5);
@@ -183,7 +184,7 @@ describe('Lodash training', function ()
 
                 it('should verify params', function () {
                     expect(params).to.have.length(2);
-                    expect(params[0] instanceof Object).to.eql(true);
+                    params[0].should.be.instanceof(Object);
                     expect(typeof params[1]).to.eql('string');
                 });
 
